@@ -1,10 +1,6 @@
 /* Nama File    : Titik.java
  * Deskripsi    : Berisi atribut dan method dalam class Titik
-<<<<<<< HEAD
  * Pembuat      : Ananda Putra Bayu 24060122140125
-=======
- * Pembuat      : Ananda Putra Bayu 26040122140125
->>>>>>> origin/main
  * Tanggal      : 19/2/2026
  */
 
