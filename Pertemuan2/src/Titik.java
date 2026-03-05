@@ -66,6 +66,56 @@ public class Titik {
         ordinat = ordinat + x;
     }
 
+    // menentukan kuadran titik
+    int getKuadran(){
+        if(absis > 0 && ordinat > 0){
+            return 1;
+        }
+        else if(absis < 0 && ordinat > 0){
+            return 2;
+        }
+        else if(absis < 0 && ordinat < 0){
+            return 3;
+        }
+        else if(absis > 0 && ordinat < 0){
+            return 4;
+        }
+        else{
+            return 0; // berada di sumbu
+        }
+    }
+
+    // jarak titik ke pusat (0,0)
+    double getJarakPusat(){
+        return Math.sqrt(absis*absis + ordinat*ordinat);
+    }
+
+    // jarak antara dua titik
+    double getJarak(Titik T){
+        return Math.sqrt(Math.pow(absis - T.absis,2) + 
+                         Math.pow(ordinat - T.ordinat,2));
+    }
+
+    // menghasilkan titik baru hasil refleksi terhadap sumbu X
+    Titik getRefleksiX(){
+        return new Titik(absis, -ordinat);
+    }
+
+    // menghasilkan titik baru hasil refleksi terhadap sumbu Y
+    Titik getRefleksiY(){
+        return new Titik(-absis, ordinat);
+    }
+
+    // merefleksikan titik terhadap sumbu X (mengubah objek)
+    void refleksiX(){
+        ordinat = -ordinat;
+    }
+
+    // merefleksikan titik terhadap sumbu Y (mengubah objek)
+    void refleksiY(){
+        absis = -absis;
+    }
+
     // mencetak koordinat titik
     void printTitik() {
         System.out.println("Titik (" + absis + "," + ordinat + ")");
