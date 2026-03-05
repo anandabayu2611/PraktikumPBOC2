@@ -17,6 +17,12 @@ public class Titik {
         ordinat = 0;
     }
 
+    // konstruktor dengan parameter (overloading)
+    Titik(double x, double y) {
+        absis = x;
+        ordinat = y;
+}
+
     // mengembalikan nilai absis
     double getAbsis() {
         return absis;
