@@ -13,23 +13,33 @@ public class Titik {
 
     /***************METHOD*****************/
     // konstruktor untuk membuat titik (0,0)
-    Titik() {
+    /*Titik() {
         absis = 0;
         ordinat = 0;
         CounterTitik++;
     }
-
+    */
+    // konstruktor dengan parameter (overloading)
+    Titik(double absis, double ordinat) {
+        this.absis = absis;
+        this.ordinat = ordinat;
+        CounterTitik++;
+    }
+    // konstruktor untuk membuat titik (0,0)
+    Titik(){
+        this(0,0);
+    }
     // mengembalikan nilai countertitik
     static int getCounterTitik(){
         return CounterTitik;
     }
 
-    // konstruktor dengan parameter (overloading)
+    /* konstruktor dengan parameter (overloading)
     Titik(double x, double y) {
         absis = x;
         ordinat = y;
     }
-
+    */
     // mengembalikan nilai absis
     double getAbsis() {
         return absis;
@@ -59,6 +69,10 @@ public class Titik {
     // mencetak koordinat titik
     void printTitik() {
         System.out.println("Titik (" + absis + "," + ordinat + ")");
+    }
+
+    void printCounterTitik() {
+        System.out.println(this.CounterTitik);
     }
 
 } // end class Titik
