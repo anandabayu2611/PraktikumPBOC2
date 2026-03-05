@@ -9,19 +9,26 @@ public class Titik {
     /***************ATRIBUT****************/
     double absis;
     double ordinat;
+    static int CounterTitik = 0;
 
     /***************METHOD*****************/
     // konstruktor untuk membuat titik (0,0)
     Titik() {
         absis = 0;
         ordinat = 0;
+        CounterTitik++;
+    }
+
+    // mengembalikan nilai countertitik
+    static int getCounterTitik(){
+        return CounterTitik;
     }
 
     // konstruktor dengan parameter (overloading)
     Titik(double x, double y) {
         absis = x;
         ordinat = y;
-}
+    }
 
     // mengembalikan nilai absis
     double getAbsis() {
