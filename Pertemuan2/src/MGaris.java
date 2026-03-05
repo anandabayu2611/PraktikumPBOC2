@@ -1,9 +1,3 @@
-/* Nama File    : Titik.java
- * Deskripsi    : berisi atribut dan method dalam class Titik
- * Pembuat      : Ananda Putra Bayu 24060122140125  
- * Tanggal      : 5/3/2026
- */
-
 public class MGaris {
 
     public static void main(String[] args) {

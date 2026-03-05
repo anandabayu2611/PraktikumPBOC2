@@ -1,5 +1,5 @@
-/* Nama File    : Titik.java
- * Deskripsi    : berisi atribut dan method dalam class Titik
+/* Nama File    : Garis.java
+ * Deskripsi    : main class untuk menguji class Titik
  * Pembuat      : Ananda Putra Bayu 24060122140125  
  * Tanggal      : 5/3/2026
  */
